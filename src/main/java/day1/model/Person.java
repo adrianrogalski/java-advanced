@@ -2,7 +2,7 @@ package day1.model;
 
 import java.time.LocalDate;
 
-public class Person {
+public class Person{
     String firstName;
     String lastName;
     LocalDate birthDate;
@@ -14,5 +14,13 @@ public class Person {
     }
 
     public Person() {
+    }
+
+    public String getFirstName(){
+        return firstName;
+    }
+
+    public String toString(){
+        return firstName + ", " + lastName + ", " + birthDate;
     }
 }
