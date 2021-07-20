@@ -3,9 +3,11 @@ package day1.model;
 import java.time.LocalDate;
 
 public class Person{
-    String firstName;
-    String lastName;
-    LocalDate birthDate;
+    // pola prywatne sa dziedziczone przez klasy pochodne ale nie sa dostepne dla tych klas do modyfikacji
+    private String firstName;
+    // pola sa dostepne w pakiecie klasach pochodnych ale nie sa dostepne poza nim (taki private z wyłączeniem klas pochodnych)
+    protected String lastName;
+    private LocalDate birthDate;
 
     public Person(String firstName, String lastName, LocalDate birthDate) {
         this.firstName = firstName;

@@ -46,7 +46,9 @@ public class InheritanceDemo {
         // Pomimo że do wywołania metody toString() posługuje sie referencja Person to toString jest interpretowana jako  (nie ważny jaki typ referencji ważne jaki jest rzeczywisty typ obiektu)
 
         for (Person person: club){
-
+            person.toString();
+            person.getFirstName();
         }
+
     }
 }
