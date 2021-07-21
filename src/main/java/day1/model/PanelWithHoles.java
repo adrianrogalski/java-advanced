@@ -15,6 +15,7 @@ public class PanelWithHoles extends Panel{
         return numberOfHoles;
     }
 
+    // przykład zastosowania nadpisania metody
     @Override
     public BigDecimal price(BigDecimal priceUnit) {
         return super.price(priceUnit).add(BigDecimal.valueOf(numberOfHoles).multiply(HOLE_PRICE));

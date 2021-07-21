@@ -29,6 +29,9 @@ public class PanelStore {
         panels[++last] = new Panel(600, 800);
         panels[++last] = new PanelWithHoles(300,100,10);
         //wyświetlenie cen paneli
+        // PRZYKŁAD DOBREGO ZASTOSOWANIA DZIEDZICZENIA I POLIMORFIZMU
+        // logika jest przerzucana na klasy i ich zależności a nie na
+        // np. if i rozpoznawanie rodzaju panelu i inny sposb liczenia dla kazdego
         for(Panel panel: panels){
             System.out.print(panel + " ");
             System.out.println(panel.price(new BigDecimal("0.06")));
